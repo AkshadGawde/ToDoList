@@ -1,12 +1,49 @@
 h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3.5rem; /* Increased font size for emphasis */
+    color: #333; /* Adjusted font color for better readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Added text shadow for depth */
+    margin-bottom: 30px; /* Increased margin for better spacing */
 }
 
 #submitButton {
-    margin-top: 20px;
+    margin-top: 30px; /* Increased margin for better spacing */
+    padding: 15px 25px; /* Added padding for button */
+    background-color: #031c61; /* Changed button color to a vibrant green */
+    color: #fff; /* Set text color to white */
+    border: none; /* Removed button border */
+    border-radius: 5px; /* Added border radius for rounded corners */
+    cursor: pointer; /* Changed cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
+    font-weight: bold; /* Added font weight for emphasis */
+    font-size: 1.2rem; /* Adjusted font size */
+}
+
+#submitButton:hover {
+    background-color: #0719e4; /* Darker shade of green on hover */
 }
 
 #myCheckbox {
-    margin-left: 30px;
+    appearance: none; /* Removed default checkbox appearance */
+    width: 25px; /* Set width for custom checkbox */
+    height: 25px; /* Set height for custom checkbox */
+    background-color: #eee; /* Set background color for checkbox */
+    border-radius: 5px; /* Added border radius for rounded checkbox */
+    cursor: pointer; /* Changed cursor to pointer */
+    position: relative; /* Added for positioning the custom checkmark */
+}
+
+#myCheckbox:checked::before {
+    content: '\2714'; /* Unicode character for checkmark */
+    font-size: 1.5rem; /* Adjusted checkmark size */
+    color: #0716e6; /* Changed checkmark color to green */
+    position: absolute; /* Positioned the checkmark */
+    top: 50%; /* Centered vertically */
+    left: 50%; /* Centered horizontally */
+    transform: translate(-50%, -50%); /* Centered the checkmark */
+}
+
+#myCheckbox:checked::before {
+    animation: checkmark 0.3s ease; /* Added animation effect */
 }
